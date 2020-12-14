@@ -30,6 +30,11 @@ dependencies {
     testImplementation("io.mockk:mockk:1.9.3")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.6.0")
+    implementation("org.springframework.boot:spring-boot-starter-webflux")
+    implementation("org.springframework.data:spring-data-jdbc:1.0.0.r2dbc-SNAPSHOT")
+
+    implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
+
 }
 
 tasks.test {
