@@ -30,10 +30,11 @@ dependencies {
     testImplementation("io.mockk:mockk:1.9.3")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.6.0")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.6.0")
-    implementation("org.springframework.boot:spring-boot-starter-webflux")
-    implementation("org.springframework.data:spring-data-jdbc:1.0.0.r2dbc-SNAPSHOT")
 
     implementation("org.springframework.boot:spring-boot-starter-data-r2dbc")
+
+    runtimeOnly("com.h2database:h2")
+    runtimeOnly("io.r2dbc:r2dbc-h2")
 
 }
 
@@ -44,3 +45,8 @@ tasks.test {
 tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "11"
 }
+val jar: Jar by tasks
+val bootJar: org.springframework.boot.gradle.tasks.bundling.BootJar by tasks
+
+bootJar.enabled = false
+jar.enabled = true
