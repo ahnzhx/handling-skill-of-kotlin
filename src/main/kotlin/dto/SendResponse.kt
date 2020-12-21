@@ -1,6 +1,6 @@
 package dto
 
-import org.apache.http.HttpStatus
+import org.springframework.http.HttpStatus
 
 data class SendResponse(
     val result: HttpStatus,
