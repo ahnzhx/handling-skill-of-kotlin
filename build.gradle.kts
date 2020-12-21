@@ -21,7 +21,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-validation")
-
+    implementation("org.jetbrains.kotlin:kotlin-reflect:1.4.21")
     implementation("com.google.firebase:firebase-admin:6.16.0")
 
     runtimeOnly("com.h2database:h2")
