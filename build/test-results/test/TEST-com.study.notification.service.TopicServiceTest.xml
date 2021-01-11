@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.study.notification.service.TopicServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-01-11T14:32:22" hostname="Sohyunui-MacBook-Pro.local" time="0.621">
+  <properties/>
+  <testcase name="find test()" classname="com.study.notification.service.TopicServiceTest" time="0.621"/>
+  <system-out><![CDATA[23:32:21.266 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating spyk for TopicRepository name=#1
+23:32:23.090 [Test worker] DEBUG io.mockk.impl.instantiation.AbstractMockFactory - Creating mockk for Topic name=child of #1#2
+23:32:23.105 [Test worker] DEBUG io.mockk.impl.recording.states.AnsweringState - Answering Topic(id=null, topic='news', status=ACTIVE) on TopicRepository(#1).findByTopic(news)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
