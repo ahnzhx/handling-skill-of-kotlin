@@ -46,6 +46,9 @@ tasks.test {
 tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "11"
 }
+tasks.register("upper"){
+    doLast { println ("sonnie github push completed") }
+}
 val jar: Jar by tasks
 val bootJar: org.springframework.boot.gradle.tasks.bundling.BootJar by tasks
 
